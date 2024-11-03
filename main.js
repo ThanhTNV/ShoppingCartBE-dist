@@ -396,7 +396,7 @@ const config_1 = __webpack_require__(12);
 let DatabaseService = class DatabaseService {
     constructor(configService) {
         this.configService = configService;
-        this.uri = `mongodb+srv://${configService.get('DB_USERNAME')}:${configService.get('DB_PASSWORD')}@shoppingcartcluster.z2tjc.mongodb.net/?retryWrites=true&w=majority&appName=ShoppingCartCluster`;
+        this.uri = `mongodb+srv://${configService.get('DB_USERNAME')}:${configService.get('DB_PASSWORD')}@shoppingcartbe.q43ux.mongodb.net/?retryWrites=true&w=majority&appName=ShoppingCartBE`;
         this.client = new mongodb_1.MongoClient(this.uri);
         this.db = this.client.db('ShoppingCartDB_clone');
     }
